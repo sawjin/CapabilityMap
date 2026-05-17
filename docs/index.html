@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>能力地图 - 网络云化产品部公共Skill门户</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    .skill-card {
+      border: 1px solid #e8e8e8;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 12px 0;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .skill-card h3 { margin: 0 0 8px; color: #333; }
+    .skill-desc { color: #666; margin: 8px 0; line-height: 1.6; }
+    .skill-meta {
+      display: flex;
+      gap: 12px;
+      color: #888;
+      font-size: 14px;
+      margin: 8px 0;
+    }
+    .skill-tags { margin: 8px 0; }
+    .skill-tag {
+      display: inline-block;
+      background: #f0f0f0;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      margin-right: 4px;
+    }
+    .skill-actions { margin-top: 12px; display: flex; gap: 8px; }
+    .copy-btn {
+      background: #42b983;
+      color: #fff;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .copy-btn.copied { background: #67c23a; }
+    .git-link {
+      color: #42b983;
+      text-decoration: none;
+      padding: 6px 12px;
+      border: 1px solid #42b983;
+      border-radius: 4px;
+    }
+    .tag-btn {
+      background: #fff;
+      border: 1px solid #dcdfe6;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 4px;
+    }
+    .tag-btn.active { background: #42b983; color: #fff; border-color: #42b983; }
+    .empty-state {
+      color: #999;
+      text-align: center;
+      padding: 40px;
+    }
+    #skill-search {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #dcdfe6;
+      border-radius: 4px;
+      margin: 16px 0;
+    }
+    .home-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin: 24px 0;
+    }
+    .home-card {
+      border: 1px solid #e8e8e8;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      background: #fff;
+    }
+    .home-card a {
+      color: #42b983;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '能力地图',
+      repo: '',
+      loadSidebar: true,
+      subMaxLevel: 2,
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: '搜索',
+        noData: '没有结果'
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="js/docsify-plugin.js"></script>
+</body>
+</html>

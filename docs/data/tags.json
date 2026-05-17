@@ -1,0 +1,8 @@
+{
+  "tags": [
+    { "name": "AI辅助", "description": "使用AI技术辅助开发" },
+    { "name": "自动化", "description": "自动执行重复任务" },
+    { "name": "模板类", "description": "提供标准化模板" },
+    { "name": "生成类", "description": "自动生成文档或代码" }
+  ]
+}
